@@ -34,6 +34,7 @@
   (ctypecase p
     (complex (cons (realpart p) (imagpart p)))
     (vector (cons (aref p 0) (aref p 1)))
+    (fixnum (cons p 0))
     (cons (cons (first p) (second p)))))
 
 
